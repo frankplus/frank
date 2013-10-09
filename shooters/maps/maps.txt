@@ -1,0 +1,8 @@
+basic
+cs_italy
+dd3
+de_dust2
+iceworld
+shooters
+Bonta's city
+---END---

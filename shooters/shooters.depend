@@ -1,0 +1,183 @@
+# depslib dependency file v1.0
+1358363891 source:c:\documents and settings\pham\desktop\shooters\surface.cpp
+	"surface.h"
+
+1358363863 c:\documents and settings\pham\desktop\shooters\surface.h
+	"shooters.h"
+	<SDL/SDL.h>
+	"SDL_rotozoom.h"
+
+1363703340 source:c:\documents and settings\pham\desktop\shooters\main.cpp
+	"shooters.h"
+	<SDL/SDL.h>
+	"map.h"
+	"player.h"
+	<fstream>
+	"ttf.h"
+	"gun.h"
+
+1361392716 source:c:\documents and settings\pham\desktop\shooters\map.cpp
+	"map.h"
+	<cstdlib>
+
+1358875266 c:\documents and settings\pham\desktop\shooters\map.h
+	"shooters.h"
+	"surface.h"
+	<SDL/SDL.h>
+	<fstream>
+	<vector>
+	<iostream>
+
+1355665050 c:\documents and settings\pham\desktop\shooters\joystick.h
+	<SDL/SDL.h>
+
+1355665384 source:c:\documents and settings\pham\desktop\shooters\joystick.cpp
+	"joystick.h"
+
+1355837399 c:\documents and settings\pham\desktop\shooters\sdl_rotozoom.h
+	<math.h>
+	<SDL/SDL.h>
+
+1361391364 source:c:\documents and settings\pham\desktop\shooters\player.cpp
+	"player.h"
+
+1358957590 c:\documents and settings\pham\desktop\shooters\player.h
+	"shooters.h"
+	"surface.h"
+	<cmath>
+	"map.h"
+
+1336970606 source:c:\documents and settings\pham\desktop\shooters\sdl_rotozoom.c
+	<windows.h>
+	<stdlib.h>
+	<string.h>
+	"SDL_rotozoom.h"
+
+1355848641 c:\documents and settings\pham\desktop\shooters\error.h
+	<windows.h>
+	<SDL/SDL_error.h>
+	<string>
+
+1355849868 source:c:\documents and settings\pham\desktop\shooters\error.cpp
+	"error.h"
+
+1359044099 c:\documents and settings\pham\desktop\shooters\shooters.h
+	<windows.h>
+	<SDL/SDL_error.h>
+	<string>
+	<cmath>
+	<SDL/SDL.h>
+
+1356457595 source:c:\documents and settings\pham\desktop\shooters\shooters.cpp
+	"shooters.h"
+
+1361307671 source:c:\documents and settings\pham\desktop\shooters\checkcollision.cpp
+	"shooters.h"
+
+1356369204 c:\documents and settings\pham\desktop\shooters\checkcollision.h
+	"shooters.h"
+	<cmath>
+
+1357241491 c:\documents and settings\pham\desktop\shooters\ttf.h
+	"shooters.h"
+	<string>
+	<SDL/SDL_ttf.h>
+	<SDL/SDL.h>
+
+1357316476 source:c:\documents and settings\pham\desktop\shooters\ttf.cpp
+	"ttf.h"
+
+1361392806 source:c:\documents and settings\pham\desktop\shooters\gun.cpp
+	"gun.h"
+
+1361391734 c:\documents and settings\pham\desktop\shooters\gun.h
+	<string>
+	"shooters.h"
+	"player.h"
+	<SDL/SDL_mixer.h>
+	"map.h"
+
+1364466283 source:c:\documents and settings\pham\desktop\shooters\recource.rc
+
+1361307671 source:c:\users\frank\downloads\shooters src ask for psw\shooters\checkcollision.cpp
+	"shooters.h"
+
+1359044099 c:\users\frank\downloads\shooters src ask for psw\shooters\shooters.h
+	<windows.h>
+	<SDL/SDL_error.h>
+	<string>
+	<cmath>
+	<SDL/SDL.h>
+
+1364466859 source:c:\users\frank\downloads\shooters src ask for psw\shooters\gun.cpp
+	"gun.h"
+
+1361391734 c:\users\frank\downloads\shooters src ask for psw\shooters\gun.h
+	<string>
+	"shooters.h"
+	"player.h"
+	<SDL/SDL_mixer.h>
+	"map.h"
+
+1358957590 c:\users\frank\downloads\shooters src ask for psw\shooters\player.h
+	"shooters.h"
+	"surface.h"
+	<cmath>
+	"map.h"
+
+1358363863 c:\users\frank\downloads\shooters src ask for psw\shooters\surface.h
+	"shooters.h"
+	<SDL/SDL.h>
+	"SDL_rotozoom.h"
+
+1355837399 c:\users\frank\downloads\shooters src ask for psw\shooters\sdl_rotozoom.h
+	<math.h>
+	<SDL/SDL.h>
+
+1358875266 c:\users\frank\downloads\shooters src ask for psw\shooters\map.h
+	"shooters.h"
+	"surface.h"
+	<SDL/SDL.h>
+	<fstream>
+	<vector>
+	<iostream>
+
+1363703340 source:c:\users\frank\downloads\shooters src ask for psw\shooters\main.cpp
+	"shooters.h"
+	<SDL/SDL.h>
+	"map.h"
+	"player.h"
+	<fstream>
+	"ttf.h"
+	"gun.h"
+
+1357241491 c:\users\frank\downloads\shooters src ask for psw\shooters\ttf.h
+	"shooters.h"
+	<string>
+	<SDL/SDL_ttf.h>
+	<SDL/SDL.h>
+
+1361391364 source:c:\users\frank\downloads\shooters src ask for psw\shooters\player.cpp
+	"player.h"
+
+1364466283 source:c:\users\frank\downloads\shooters src ask for psw\shooters\recource.rc
+
+1336974206 source:c:\users\frank\downloads\shooters src ask for psw\shooters\sdl_rotozoom.c
+	<windows.h>
+	<stdlib.h>
+	<string.h>
+	"SDL_rotozoom.h"
+
+1356457595 source:c:\users\frank\downloads\shooters src ask for psw\shooters\shooters.cpp
+	"shooters.h"
+
+1358363891 source:c:\users\frank\downloads\shooters src ask for psw\shooters\surface.cpp
+	"surface.h"
+
+1357316476 source:c:\users\frank\downloads\shooters src ask for psw\shooters\ttf.cpp
+	"ttf.h"
+
+1364469229 source:c:\users\frank\downloads\shooters src ask for psw\shooters\map.cpp
+	"map.h"
+	<cstdlib>
+
