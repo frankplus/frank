@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1354647514 source:c:\documents and settings\pham\desktop\switch-smiley\main.cpp
+	"ClassSDL.h"
+
+1354642821 c:\documents and settings\pham\desktop\switch-smiley\classsdl.h
+	<SDL/SDL.h>
+
+1354646542 source:c:\documents and settings\pham\desktop\switch-smiley\classsdl.cpp
+	"ClassSDL.h"
+

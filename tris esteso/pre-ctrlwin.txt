@@ -1,0 +1,119 @@
+int ctrlwin(char wnr)
+{
+    register int count, i, j, x, y;
+    
+     /*Controllo righe*/
+     for(i=0; i<DIM; i++)
+     {
+          count=0;
+          for(j=0; j<DIM; j++)
+               if(tris[i][j]==wnr)
+               {
+                    count++;
+                    if(count==NWIN) return 1;
+               }
+               else
+                    count=0;
+     }
+     
+     /*Controllo colonne*/
+     for(j=0; j<DIM; j++)
+     {
+          count=0;
+          for(i=0; i<DIM; i++)
+               if(tris[i][j]==wnr)
+               {
+                    count++;
+                    if(count==NWIN) return 1;
+               }
+               else
+                    count=0;
+     }
+     
+     /*Controllo diagonale '\'*/
+     /*
+     controllo diagonali di queste caselle
+        0 1 2 3 4 5
+     0 |x|_|_|_|_|_|
+     1 |x|x|_|_|_|_|
+     2 |x|x|x|_|_|_|
+     3 |x|x|x|x|_|_|
+     4 |x|x|x|x|x|_|
+     5 |x|x|x|x|x|x|
+     
+     */
+     for(i=0; i<DIM; i++)
+     {
+          count=0;
+          for(x=0,y=i ; (x>=0)&&(x<DIM)&&(y>=0)&&(y<DIM) ; x++,y++)
+          {
+               if(tris[y][x]==wnr)
+               {
+                    count++;
+                    if(count==NWIN) return 1;
+               }
+               else
+                    count=0;
+          }
+     }
+     
+     /*
+     controllo diagonali di queste caselle
+        0 1 2 3 4 5
+     0 |_|x|x|x|x|x|
+     1 |_|_|x|x|x|x|
+     2 |_|_|_|x|x|x|
+     3 |_|_|_|_|x|x|
+     4 |_|_|_|_|_|x|
+     5 |_|_|_|_|_|_|
+     
+     */
+     for(j=1; j<DIM; j++)
+     {
+          count=0;
+          for(x=j,y=0 ; (x>=0)&&(x<DIM)&&(y>=0)&&(y<DIM) ; x++,y++)
+          {
+               if(tris[y][x]==wnr)
+               {
+                    count++;
+                    if(count==NWIN) return 1;
+               }
+               else
+                    count=0;
+          }
+     }
+     
+     /*Controllo diagonale '/' */
+     
+     for(i=0; i<DIM; i++)
+     {
+          count=0;
+          for(x=0,y=i ; (x>=0)&&(x<DIM)&&(y>=0)&&(y<DIM) ; x++,y--)
+          {
+               if(tris[y][x]==wnr)
+               {
+                    count++;
+                    if(count==NWIN) return 1;
+               }
+               else
+                    count=0;
+          }
+     }
+     
+     for(j=1; j<DIM; j++)
+     {
+          count=0;
+          for(x=j,y=9 ; (x>=0)&&(x<DIM)&&(y>=0)&&(y<DIM) ; x++,y--)
+          {
+               if(tris[y][x]==wnr)
+               {
+                    count++;
+                    if(count==NWIN) return 1;
+               }
+               else
+                    count=0;
+          }
+     }
+     
+     return 0;
+}

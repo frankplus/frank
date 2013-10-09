@@ -1,0 +1,33 @@
+# Project: tris
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = tris_private.res
+OBJ  = main.o $(RES)
+LINKOBJ  = main.o $(RES)
+LIBS =  -lconio  
+INCS = 
+CXXINCS = 
+BIN  = tris.exe
+CXXFLAGS = $(CXXINCS)   -lconio -g3 -Wall
+CFLAGS = $(INCS)   -lconio -g3 -Wall
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before tris.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "tris.exe" $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+tris_private.res: tris_private.rc 
+	$(WINDRES) -i tris_private.rc --input-format=rc -o tris_private.res -O coff 

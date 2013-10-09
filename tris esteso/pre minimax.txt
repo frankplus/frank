@@ -1,0 +1,76 @@
+void move(void)
+{
+     int i, j, max=INT_MIN, mi, mj, t;
+     MaxDeep = 5;
+     
+     for(i=0;i<DIM;i++)
+          for(j=0;j<DIM;j++)
+               if(tris[i][j]==' ')
+               {
+                    tris[i][j]='O';
+                    t=valutamossa('X', 1);
+                    printf("%d ; ",t);
+                    //system("PAUSE");
+                    if(t>=max)
+                    {
+                         max=t;
+                         mi=i;
+                         mj=j;
+                    }
+                    tris[i][j]=' ';
+               }
+     tris[mi][mj]='O';
+}
+ 
+int valutamossa(char wnr, int deep)//Minimax
+{
+     register int i, j, res, tmp;
+     
+     //printf("%d ", deep);
+     
+        if(ctrlwin('O'))
+                return INT_MAX;
+        if(deep == MaxDeep || endgame())
+                return 0;
+        if(wnr=='X')
+        {
+                res=1;
+                for(i=0;i<DIM;i++)
+                        for(j=0;j<DIM;j++)
+                        {
+                                if(tris[i][j]==' ')
+                                {
+                                        tris[i][j]='X';
+                                        if(ctrlwin('X'))
+                                                if(deep == 1)
+                                                {
+                                                        tris[i][j]=' ';
+                                                        return INT_MIN;
+                                                }
+                                                else
+                                                        res-=2;
+                                        else if((tmp=valutamossa('O', deep + 1))<res)
+                                                res=tmp;
+                                        tris[i][j]=' ';
+                                }
+                        }
+        }
+        else
+        {
+                res=-1;
+                for(i=0;i<DIM;i++)
+                        for(j=0;j<DIM;j++)
+                        {
+                                if(tris[i][j]==' ')
+                                {
+                                        tris[i][j]='O';
+                                        if(ctrlwin('O'))
+                                                res+=2;
+                                        else if((tmp=valutamossa('X', deep + 1))>res)
+                                                res=tmp;
+                                        tris[i][j]=' ';
+                                }
+                        }
+        }
+        return res;
+}

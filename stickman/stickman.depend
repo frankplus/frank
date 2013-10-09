@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1354727664 source:c:\documents and settings\pham\desktop\stickman\stickman\main.cpp
+	"ClassSDL.h"
+
+1354727204 c:\documents and settings\pham\desktop\stickman\stickman\classsdl.h
+	<SDL/SDL.h>
+
+1354727204 source:c:\documents and settings\pham\desktop\stickman\stickman\classsdl.cpp
+	"ClassSDL.h"
+
