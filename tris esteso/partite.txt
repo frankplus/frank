@@ -4,3 +4,6 @@
 OX OOXX O
 OOXOX OXX
 OOOXOXOOXXXOOXXX
+OO         XXX           
+OOOOO X     X     X  X  X
+OOOO       XXX   X       
