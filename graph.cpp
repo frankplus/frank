@@ -1,6 +1,6 @@
 /*
     Author: Pham Francesco (frankplus)
-    Contact: binh282828@hotmail.it
+    Contact: pham.francesco@gmail.com
 
     Basic problem:  Write a set of constructors for declaring and initializing a graph. An edge will have a positive cost that is its distance.
     Have a procedure that produces a randomly generated set of edges with positive distances.  Assume the graphs are undirected.
